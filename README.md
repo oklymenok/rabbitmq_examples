@@ -19,3 +19,6 @@
 
 * Check queues
   docker exec -ti rabbitmq-server rabbitmqctl list_queues
+
+* Print messages_unacknowledged
+  docker exec -ti rabbitmq-server rabbitmqctl list_queues name messages_ready messages_unacknowledged
